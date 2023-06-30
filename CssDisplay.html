@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        #lab1
+        {
+            border: 2px solid black;
+            width: 50%;
+            margin: 50px;
+            padding: 20px;
+            display: block;
+        }
+        .div1
+        {
+            border: 2px solid red;
+            margin: 20px;
+            width: 40%;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="JsJson.html">Go to Json</a> <br>
+        <a href="CssPosition.html">Go to Position</a> <br>
+        <a href="DisplayEXE.html">Go to Display Exercise</a> <br>
+    </nav>
+
+    <label id="lab1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda unde ipsa modi in, consequatur, eum officia similique illo provident corrupti cumque est possimus. Eligendi nesciunt eos eius autem quisquam? Quibusdam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus nisi quaerat excepturi? Inventore, magnam deleniti. Corrupti voluptate natus aliquam iusto, autem provident molestiae rerum, aperiam nemo quos sint voluptatibus in.</label>
+
+    <style>
+        .dis-example
+        {
+            display: none;
+            /* display: block; */ 
+        }
+    </style>
+    <hr>
+    <label class="dis-example">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+    <hr>
+
+    <div class="div1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quos, distinctio voluptatum tenetur tempore voluptatem aliquam consequuntur vero ipsa inventore, omnis, ipsum at rerum. Dolor delectus ipsam culpa debitis est! Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+    <style>
+        #product-card
+        {
+            width: 380px;
+            margin: 20px;
+            box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.705);
+            overflow: hidden;
+            border-radius: 20px;
+            font-family: calibri;
+        }
+        td{min-width: 105px;}
+        .detail
+        {
+            text-decoration: none;
+            display: block;
+            border: 2px solid black;
+            padding: 8px 20px 8px 10px;
+            width: fit-content;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            margin: auto;
+        }
+        .detail:hover
+        {
+            background-color: transparent;
+            color: black;
+            border: 2px solid black;
+        }
+    </style>
+    <div id="product-card">
+        <img src="pexels-andrew-neel-3201768.jpg" width="200px" height="200px" style="transform: scale(1.1); margin-top: 50px;">
+        <table border="0">
+            <tr>
+                <td>Laptop :</td>
+                <td>Nitro5 Gaming</td>
+            </tr>
+            <tr>
+                <td>Brand :</td>
+                <td>Acer</td>
+            </tr>
+            <tr>
+                <td>Specification</td>
+                <td>CPU: I5 11 gen <br>
+                GPU: RTX 3050 4gb</td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="" class="detail">More Detail</a></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        ScrollReveal().reveal('#product-card', {
+    delay: 400,
+    duration: 1200,
+    distance: '200px',
+    origin: 'left',
+    reset: 'true'
+});
+    </script>
+
+    <style>
+        .mydiv1
+        {
+            border: 2px solid blue;
+            width: 430px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .mydiv2
+        {
+            border: 2px solid red;
+            width: 350px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .mydiv3
+        {
+            border: 2px solid gold;
+            width: 390px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+    <div class="mydiv1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque suscipit architecto porro nam ut laborum totam esse. Non quos libero, voluptas laborum aperiam velit quas dignissimos dolores aliquid deserunt obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut tempora dignissimos ipsum molestiae! Temporibus atque officia sequi quae ea, accusantium, dicta vero qui, provident neque repellendus quo! Consectetur, fugit quasi?</div>
+    <div class="mydiv2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa enim animi, inventore eum, necessitatibus ea ex quod porro corrupti laudantium nemo maxime adipisci repudiandae aperiam similique, eos odio nostrum!</div>
+    <div class="mydiv3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis temporibus vero, odit ipsam molestias eligendi, maxime consequatur iste velit similique repellendus nam ipsa soluta, aperiam unde sapiente ullam itaque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, neque? Corrupti iste fugit atque deserunt,facere accusantium repellendus officia rem voluptatum odit magni reprehenderit!</div>
+
+    <style>
+        #dis-flex
+        {
+            border: 2px solid blue;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            /* align-content: space-between; */
+            row-gap: 20px;
+        }
+        #dis-flex > div
+        {
+            border: 2px solid red;
+        }
+    </style>
+    <h2>Flex</h2>
+    <section id="dis-flex">
+        <div style="width: 350px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsa voluptates. Ipsam architecto eligendi, quaerat fugit, quia dolore incidunt unde dolores voluptatibus minima aliquid quasi nemo dicta eos ex exercitationem!</div>
+        <div style="width: 350px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ipsam dolorem quae labore vel corporis beatae ex officia itaque rem odio molestias vero nihil placeat vitae quasi, qui ullam ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laudantium laborum autem suscipit tempore aliquam voluptatem quo, corporis ullam unde corrupti repellat nostrum cumque repellendus maxime recusandae placeat accusantium illo.</div>
+        <div style="width: 350px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officia blanditiis quis enim soluta dolore ex nisi, sequi quasi corrupti, voluptates pariatur earum cumque vel animi culpa! Voluptate, suscipit modi.</div>
+    </section>
+</body>
+</html>
